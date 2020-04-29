@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="138" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="138" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+      <class name="com.ip.qa.StreamReduceTest">
+        <test-method status="PASS" signature="testWithAllNegitiveNumbers()[pri:0, instance:com.ip.qa.StreamReduceTest@573f2bb1]" name="testWithAllNegitiveNumbers" duration-ms="89" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithAllNegitiveNumbers -->
+        <test-method status="PASS" signature="testWithAllPositiveNumbers()[pri:0, instance:com.ip.qa.StreamReduceTest@573f2bb1]" name="testWithAllPositiveNumbers" duration-ms="2" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithAllPositiveNumbers -->
+        <test-method status="PASS" signature="testWithEmptyString()[pri:0, instance:com.ip.qa.StreamReduceTest@573f2bb1]" name="testWithEmptyString" duration-ms="4" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithEmptyString -->
+        <test-method status="PASS" signature="testWithPositiveAndNegitiveNumbers()[pri:0, instance:com.ip.qa.StreamReduceTest@573f2bb1]" name="testWithPositiveAndNegitiveNumbers" duration-ms="1" started-at="2020-04-27T08:38:56Z" finished-at="2020-04-27T08:38:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithPositiveAndNegitiveNumbers -->
+      </class> <!-- com.ip.qa.StreamReduceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

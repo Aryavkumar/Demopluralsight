@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 1 failed,   40 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample2Test" hash-for-method="nmNull">nmNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo1Test" hash-for-method="checkWithEmptyArray">checkWithEmptyArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.PredicateDemoTest" hash-for-method="checkWithEmptyString">checkWithEmptyString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo1Test" hash-for-method="checkingWithGreaterThanGivenCondition">checkingWithGreaterThanGivenCondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo1Test" hash-for-method="checkingWithLessthanGivenCondition">checkingWithLessthanGivenCondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo1Test" hash-for-method="checkingWithNegitiveAndPositiveNumbers">checkingWithNegitiveAndPositiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo1Test" hash-for-method="checkingWithNegitiveNumbers">checkingWithNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample2Test" hash-for-method="multiple">multiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample2Test" hash-for-method="nmAnyMatch">nmAnyMatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample2Test" hash-for-method="nmNotMatch">nmNotMatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.BOperatorTest" hash-for-method="testOneNegNum">testOneNegNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.BOperatorTest" hash-for-method="testTwoNegNum">testTwoNegNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.BOperatorTest" hash-for-method="testTwoNum">testTwoNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.ComparatorTest" hash-for-method="testWithAllNegitiveNumbers">testWithAllNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamReduceTest" hash-for-method="testWithAllNegitiveNumbers">testWithAllNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.Comparator2Test" hash-for-method="testWithAllNegitiveNumbers">testWithAllNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamReduceTest" hash-for-method="testWithAllPositiveNumbers">testWithAllPositiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.Comparator2Test" hash-for-method="testWithAllPositiveNumbers">testWithAllPositiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.ComparatorTest" hash-for-method="testWithAllPositiveNumbers">testWithAllPositiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo2Test" hash-for-method="testWithEmptyArray">testWithEmptyArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamReduceTest" hash-for-method="testWithEmptyString">testWithEmptyString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.BOperatorTest" hash-for-method="testWithLargeNumbers">testWithLargeNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.PredicateDemoTest" hash-for-method="testWithLargeString">testWithLargeString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.LowerCaseTest" hash-for-method="testWithLowerCase">testWithLowerCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.LowerCaseTest" hash-for-method="testWithLowerUpperords">testWithLowerUpperords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo2Test" hash-for-method="testWithMultiple">testWithMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.LowerCaseTest" hash-for-method="testWithMultipleWords">testWithMultipleWords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamDemo2Test" hash-for-method="testWithNonMultiple">testWithNonMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample3Test" hash-for-method="testWithNotPrime">testWithNotPrime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.LowerCaseTest" hash-for-method="testWithNumbers">testWithNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.PredicateDemoTest" hash-for-method="testWithNumbers">testWithNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.ComparatorTest" hash-for-method="testWithPosiAndNegitive">testWithPosiAndNegitive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.Comparator2Test" hash-for-method="testWithPositiveAndNegitiveNumber">testWithPositiveAndNegitiveNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamReduceTest" hash-for-method="testWithPositiveAndNegitiveNumbers">testWithPositiveAndNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample3Test" hash-for-method="testWithPrime">testWithPrime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.PredicateDemoTest" hash-for-method="testWithString">testWithString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.StreamExample3Test" hash-for-method="testWithZero">testWithZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.BOperatorTest" hash-for-method="testWithZero">testWithZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.ComparatorTest" hash-for-method="testWithZeroNegitiveNumbers">testWithZeroNegitiveNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.Comparator2Test" hash-for-method="testWithZeroPositiveAndNegitive">testWithZeroPositiveAndNegitive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.ip.qa.LowerCaseTest" hash-for-method="testWithnumbersWords">testWithnumbersWords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ip.qa.StreamExample2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="nmNull">
+                  </a> <!-- nmNull -->
+                  <span class="method-name">nmNull</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.ip.qa.StreamExample2.addTest(StreamExample2.java:14)
+	at com.ip.qa.StreamExample2Test.nmNull(StreamExample2Test.java:29)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.StreamReduceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllNegitiveNumbers">
+                  </a> <!-- testWithAllNegitiveNumbers -->
+                  <span class="method-name">testWithAllNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllPositiveNumbers">
+                  </a> <!-- testWithAllPositiveNumbers -->
+                  <span class="method-name">testWithAllPositiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithEmptyString">
+                  </a> <!-- testWithEmptyString -->
+                  <span class="method-name">testWithEmptyString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithPositiveAndNegitiveNumbers">
+                  </a> <!-- testWithPositiveAndNegitiveNumbers -->
+                  <span class="method-name">testWithPositiveAndNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.StreamDemo2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithEmptyArray">
+                  </a> <!-- testWithEmptyArray -->
+                  <span class="method-name">testWithEmptyArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMultiple">
+                  </a> <!-- testWithMultiple -->
+                  <span class="method-name">testWithMultiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithNonMultiple">
+                  </a> <!-- testWithNonMultiple -->
+                  <span class="method-name">testWithNonMultiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.ComparatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllNegitiveNumbers">
+                  </a> <!-- testWithAllNegitiveNumbers -->
+                  <span class="method-name">testWithAllNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllPositiveNumbers">
+                  </a> <!-- testWithAllPositiveNumbers -->
+                  <span class="method-name">testWithAllPositiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithPosiAndNegitive">
+                  </a> <!-- testWithPosiAndNegitive -->
+                  <span class="method-name">testWithPosiAndNegitive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithZeroNegitiveNumbers">
+                  </a> <!-- testWithZeroNegitiveNumbers -->
+                  <span class="method-name">testWithZeroNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.Comparator2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllNegitiveNumbers">
+                  </a> <!-- testWithAllNegitiveNumbers -->
+                  <span class="method-name">testWithAllNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAllPositiveNumbers">
+                  </a> <!-- testWithAllPositiveNumbers -->
+                  <span class="method-name">testWithAllPositiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithPositiveAndNegitiveNumber">
+                  </a> <!-- testWithPositiveAndNegitiveNumber -->
+                  <span class="method-name">testWithPositiveAndNegitiveNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithZeroPositiveAndNegitive">
+                  </a> <!-- testWithZeroPositiveAndNegitive -->
+                  <span class="method-name">testWithZeroPositiveAndNegitive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.StreamExample2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiple">
+                  </a> <!-- multiple -->
+                  <span class="method-name">multiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nmAnyMatch">
+                  </a> <!-- nmAnyMatch -->
+                  <span class="method-name">nmAnyMatch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nmNotMatch">
+                  </a> <!-- nmNotMatch -->
+                  <span class="method-name">nmNotMatch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.StreamDemo1Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkWithEmptyArray">
+                  </a> <!-- checkWithEmptyArray -->
+                  <span class="method-name">checkWithEmptyArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingWithGreaterThanGivenCondition">
+                  </a> <!-- checkingWithGreaterThanGivenCondition -->
+                  <span class="method-name">checkingWithGreaterThanGivenCondition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingWithLessthanGivenCondition">
+                  </a> <!-- checkingWithLessthanGivenCondition -->
+                  <span class="method-name">checkingWithLessthanGivenCondition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingWithNegitiveAndPositiveNumbers">
+                  </a> <!-- checkingWithNegitiveAndPositiveNumbers -->
+                  <span class="method-name">checkingWithNegitiveAndPositiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingWithNegitiveNumbers">
+                  </a> <!-- checkingWithNegitiveNumbers -->
+                  <span class="method-name">checkingWithNegitiveNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.LowerCaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithLowerCase">
+                  </a> <!-- testWithLowerCase -->
+                  <span class="method-name">testWithLowerCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithLowerUpperords">
+                  </a> <!-- testWithLowerUpperords -->
+                  <span class="method-name">testWithLowerUpperords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMultipleWords">
+                  </a> <!-- testWithMultipleWords -->
+                  <span class="method-name">testWithMultipleWords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithNumbers">
+                  </a> <!-- testWithNumbers -->
+                  <span class="method-name">testWithNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithnumbersWords">
+                  </a> <!-- testWithnumbersWords -->
+                  <span class="method-name">testWithnumbersWords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.BOperatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOneNegNum">
+                  </a> <!-- testOneNegNum -->
+                  <span class="method-name">testOneNegNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTwoNegNum">
+                  </a> <!-- testTwoNegNum -->
+                  <span class="method-name">testTwoNegNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTwoNum">
+                  </a> <!-- testTwoNum -->
+                  <span class="method-name">testTwoNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithLargeNumbers">
+                  </a> <!-- testWithLargeNumbers -->
+                  <span class="method-name">testWithLargeNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithZero">
+                  </a> <!-- testWithZero -->
+                  <span class="method-name">testWithZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.StreamExample3Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithNotPrime">
+                  </a> <!-- testWithNotPrime -->
+                  <span class="method-name">testWithNotPrime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithPrime">
+                  </a> <!-- testWithPrime -->
+                  <span class="method-name">testWithPrime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithZero">
+                  </a> <!-- testWithZero -->
+                  <span class="method-name">testWithZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ip.qa.PredicateDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkWithEmptyString">
+                  </a> <!-- checkWithEmptyString -->
+                  <span class="method-name">checkWithEmptyString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithLargeString">
+                  </a> <!-- testWithLargeString -->
+                  <span class="method-name">testWithLargeString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithNumbers">
+                  </a> <!-- testWithNumbers -->
+                  <span class="method-name">testWithNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithString">
+                  </a> <!-- testWithString -->
+                  <span class="method-name">testWithString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ip.qa.BOperatorTest&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.Comparator2Test&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.ComparatorTest&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.LowerCaseTest&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.PredicateDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.StreamDemo1Test&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.StreamDemo2Test&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.StreamExample2Test&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.StreamExample3Test&quot;/&gt;
+      &lt;class name=&quot;com.ip.qa.StreamReduceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testOneNegNum')
+data.setCell(0, 2, 'com.ip.qa.BOperatorTest')
+data.setCell(0, 3, 61);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testWithAllNegitiveNumbers')
+data.setCell(1, 2, 'com.ip.qa.Comparator2Test')
+data.setCell(1, 3, 10);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkWithEmptyArray')
+data.setCell(2, 2, 'com.ip.qa.StreamDemo1Test')
+data.setCell(2, 3, 5);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testWithAllNegitiveNumbers')
+data.setCell(3, 2, 'com.ip.qa.ComparatorTest')
+data.setCell(3, 3, 4);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkWithEmptyString')
+data.setCell(4, 2, 'com.ip.qa.PredicateDemoTest')
+data.setCell(4, 3, 4);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testWithNotPrime')
+data.setCell(5, 2, 'com.ip.qa.StreamExample3Test')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testWithEmptyArray')
+data.setCell(6, 2, 'com.ip.qa.StreamDemo2Test')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testWithAllNegitiveNumbers')
+data.setCell(7, 2, 'com.ip.qa.StreamReduceTest')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'multiple')
+data.setCell(8, 2, 'com.ip.qa.StreamExample2Test')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testWithLowerCase')
+data.setCell(9, 2, 'com.ip.qa.LowerCaseTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkingWithLessthanGivenCondition')
+data.setCell(10, 2, 'com.ip.qa.StreamDemo1Test')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'nmAnyMatch')
+data.setCell(11, 2, 'com.ip.qa.StreamExample2Test')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkingWithNegitiveAndPositiveNumbers')
+data.setCell(12, 2, 'com.ip.qa.StreamDemo1Test')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testWithMultipleWords')
+data.setCell(13, 2, 'com.ip.qa.LowerCaseTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testWithAllPositiveNumbers')
+data.setCell(14, 2, 'com.ip.qa.StreamReduceTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testWithString')
+data.setCell(15, 2, 'com.ip.qa.PredicateDemoTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testWithZeroNegitiveNumbers')
+data.setCell(16, 2, 'com.ip.qa.ComparatorTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testWithLargeString')
+data.setCell(17, 2, 'com.ip.qa.PredicateDemoTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testWithAllPositiveNumbers')
+data.setCell(18, 2, 'com.ip.qa.Comparator2Test')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testWithZeroPositiveAndNegitive')
+data.setCell(19, 2, 'com.ip.qa.Comparator2Test')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'checkingWithNegitiveNumbers')
+data.setCell(20, 2, 'com.ip.qa.StreamDemo1Test')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testWithNonMultiple')
+data.setCell(21, 2, 'com.ip.qa.StreamDemo2Test')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testWithNumbers')
+data.setCell(22, 2, 'com.ip.qa.LowerCaseTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testTwoNum')
+data.setCell(23, 2, 'com.ip.qa.BOperatorTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testWithMultiple')
+data.setCell(24, 2, 'com.ip.qa.StreamDemo2Test')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testWithPosiAndNegitive')
+data.setCell(25, 2, 'com.ip.qa.ComparatorTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testWithPrime')
+data.setCell(26, 2, 'com.ip.qa.StreamExample3Test')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testWithZero')
+data.setCell(27, 2, 'com.ip.qa.StreamExample3Test')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testWithnumbersWords')
+data.setCell(28, 2, 'com.ip.qa.LowerCaseTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testWithPositiveAndNegitiveNumber')
+data.setCell(29, 2, 'com.ip.qa.Comparator2Test')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testWithLowerUpperords')
+data.setCell(30, 2, 'com.ip.qa.LowerCaseTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testWithLargeNumbers')
+data.setCell(31, 2, 'com.ip.qa.BOperatorTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testWithEmptyString')
+data.setCell(32, 2, 'com.ip.qa.StreamReduceTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testWithPositiveAndNegitiveNumbers')
+data.setCell(33, 2, 'com.ip.qa.StreamReduceTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testWithAllPositiveNumbers')
+data.setCell(34, 2, 'com.ip.qa.ComparatorTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'nmNotMatch')
+data.setCell(35, 2, 'com.ip.qa.StreamExample2Test')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testWithZero')
+data.setCell(36, 2, 'com.ip.qa.BOperatorTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testWithNumbers')
+data.setCell(37, 2, 'com.ip.qa.PredicateDemoTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testTwoNegNum')
+data.setCell(38, 2, 'com.ip.qa.BOperatorTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkingWithGreaterThanGivenCondition')
+data.setCell(39, 2, 'com.ip.qa.StreamDemo1Test')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'nmNull')
+data.setCell(40, 2, 'com.ip.qa.StreamExample2Test')
+data.setCell(40, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 108 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.LowerCaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.PredicateDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.BOperatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOneNegNum</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTwoNegNum</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTwoNum</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithLargeNumbers</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithZero</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.Comparator2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithAllNegitiveNumbers</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithAllPositiveNumbers</span>
+                <span class="method-start">144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithPositiveAndNegitiveNumber</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithZeroPositiveAndNegitive</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.ComparatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithAllNegitiveNumbers</span>
+                <span class="method-start">147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithAllPositiveNumbers</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithPosiAndNegitive</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithZeroNegitiveNumbers</span>
+                <span class="method-start">153 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.LowerCaseTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithLowerCase</span>
+                <span class="method-start">155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithLowerUpperords</span>
+                <span class="method-start">158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithMultipleWords</span>
+                <span class="method-start">158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithNumbers</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithnumbersWords</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.PredicateDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkWithEmptyString</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithLargeString</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithNumbers</span>
+                <span class="method-start">166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithString</span>
+                <span class="method-start">167 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.StreamDemo1Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkWithEmptyArray</span>
+                <span class="method-start">169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingWithGreaterThanGivenCondition</span>
+                <span class="method-start">175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingWithLessthanGivenCondition</span>
+                <span class="method-start">175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingWithNegitiveAndPositiveNumbers</span>
+                <span class="method-start">176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingWithNegitiveNumbers</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.StreamDemo2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithEmptyArray</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithMultiple</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithNonMultiple</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.StreamExample2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">multiple</span>
+                <span class="method-start">184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nmAnyMatch</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nmNotMatch</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">nmNull</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.StreamExample3Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithNotPrime</span>
+                <span class="method-start">192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithPrime</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithZero</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ip.qa.StreamReduceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithAllNegitiveNumbers</span>
+                <span class="method-start">198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithAllPositiveNumbers</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithEmptyString</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithPositiveAndNegitiveNumbers</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
