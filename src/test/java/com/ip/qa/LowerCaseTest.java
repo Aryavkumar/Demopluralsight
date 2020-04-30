@@ -63,5 +63,15 @@ List<String> actual = lc.allToLowerCase(input);
 List<String> expected = Arrays.asList("abc", "bca", "def");
 Assert.assertEquals(expected, actual);
 }
+/**
+*/
+@Test
+public void testWithEmpy() {
+List<String> input = Arrays.asList("abc", "bca", "def");
+List<String> actual = lc.allToLowerCase(input);
+List<String> expected = Arrays.asList("abc", "bca", "def");
+Assert.assertEquals(expected, actual);
+}
+
 }
 
